@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="time" type="text" >
+<button onclick="Click()" >Click</button>
+</body>
+<script>
+
+
+ function Click() {
+     let browser = document.getElementById("time").value;
+
+     switch (browser) {
+         case "Edge":
+             alert("You've got the Edge!");
+             break;
+         case "Chrome":
+         case"FireFox":
+         case"Safari":
+         case"Opera":
+             alert("okay we support these browsers too");
+             break;
+         default:
+             alert("We hope that this page look ok");
+
+
+     }
+ }
+
+</script>
+</html>
